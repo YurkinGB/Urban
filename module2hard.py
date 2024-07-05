@@ -10,7 +10,6 @@ def password_selection(num):
 
 
 def checking_results():
-    s = ''
     right_answer = {3: 12, 4: 13, 5: 1423, 6: 121524, 7: 162534, 8: 13172635, 9: 1218273645,
                     10: 141923283746,
                     11: 11029384756,
@@ -27,7 +26,6 @@ def checking_results():
     print('Результат проверки.')
     print('_______________________________________________________________')
     for i in list(right_answer.keys()):
-        s = ''.join(password_selection(i))
         print(i, '-', ''.join(password_selection(i)) == str(right_answer[i]))
 
 
