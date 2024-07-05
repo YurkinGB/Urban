@@ -4,7 +4,7 @@ def password_selection(num):
 
     for i in number_list[1: len(number_list) // 2 + 1]:
         for j in number_list[i + 1:]:
-            if i != j and num % (i + j) == 0:
+            if num % (i + j) == 0:
                 result.append(str(i) + str(j))
     return result
 
