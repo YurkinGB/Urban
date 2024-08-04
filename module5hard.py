@@ -8,8 +8,6 @@ class User:
         self.age = age
 
     def __eq__(self, other):
-        # if isinstance(other, User):
-        #     return self.nickname == other.nickname and self.password == hash(other.password)
         if isinstance(other, str):
             return self.nickname == other
 
