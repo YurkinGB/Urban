@@ -12,7 +12,8 @@ class User:
             return self.nickname == other
 
     def __contains__(self, item):
-        return self.nickname == item
+        if isinstance(item, str):
+            return self.nickname == item
 
     def __str__(self):
         return self.nickname
