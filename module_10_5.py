@@ -4,7 +4,6 @@ import multiprocessing
 
 def read_info(name):
     all_data = []
-    s = 0
     with open(name, 'r', encoding='utf-8') as file:
         while True:
             line = file.readline()
@@ -12,7 +11,6 @@ def read_info(name):
                 break
             else:
                 all_data.append(line)
-
 
 
 filenames = [f'./file {number}.txt' for number in range(1, 5)]
